@@ -4,7 +4,8 @@
 
 // With the bootstrap 2 buttons, we need to move the text inside the buttons
 // up a bit
-.btn { padding: 0.44rem 1rem 0.56rem 1rem; }
+.btn:not(.btn-sm):not(.btn-xs):not(.btn-lg) { padding: 0.44rem 1rem 0.56rem 1rem; }
+.btn-sm { padding: 0.2rem 0.5rem 0.25rem 0.5rem; }
 
 // A few general btn items
 
