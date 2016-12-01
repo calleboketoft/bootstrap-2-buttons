@@ -3,9 +3,17 @@
 // http://getbootstrap.com/2.3.2/base-css.html#buttons
 
 // With the bootstrap 2 buttons, we need to move the text inside the buttons
-// up a bit
-.btn:not(.btn-sm):not(.btn-xs):not(.btn-lg) { padding: 0.44rem 1rem 0.56rem 1rem; }
-.btn-sm { padding: 0.2rem 0.5rem 0.25rem 0.5rem; }
+// up a bit for .btn and .btn-sm. Keep .btn-lg as before
+.btn {
+  padding: 0.44rem $btn-padding-x 0.56rem $btn-padding-x;
+}
+.btn-sm {
+  padding: 0.2rem $btn-padding-x-sm 0.25rem $btn-padding-x-sm;
+}
+.btn-lg {
+  // line-height: ensure even-numbered height of button next to large input
+  @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $font-size-lg, $btn-border-radius-lg);
+}
 
 // A few general btn items
 
