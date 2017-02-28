@@ -6,6 +6,7 @@
 // up a bit for .btn and .btn-sm. Keep .btn-lg as before
 .btn {
   padding: 0.44rem $btn-padding-x 0.56rem $btn-padding-x;
+  cursor: pointer;
 }
 .btn-sm {
   padding: 0.2rem $btn-padding-x-sm 0.25rem $btn-padding-x-sm;
